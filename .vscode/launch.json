@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch Depreciation",
+            "request": "launch",
+            "mainClass": "Depreciation",
+            "projectName": "TUTORING_8aa01c8"
+        },
+        {
+            "type": "java",
+            "name": "Launch main",
+            "request": "launch",
+            "mainClass": "main",
+            "projectName": "TUTORING_8aa01c8"
+        },
+        {
             "name": "Python: Current File",
             "type": "python",
             "request": "launch",
