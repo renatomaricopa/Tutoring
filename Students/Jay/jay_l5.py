@@ -1,13 +1,17 @@
 
 import random
 import time
+
+    
 def intro():
-    print("You are in galar region where you are about to get your first pokemon. There are 3 choices. \nOne is very strong, another is very terrible, and the other is super cute. chooese wisely.(1 or 2 or 3)")
+    region = input("Pick a pokemon region! (galar, somethingElse)")
+    print("You are in {} region where you are about to get your first pokemon. There are 3 choices. \nOne is very strong, another is very terrible, and the other is super cute. chooese wisely.(1 or 2 or 3)".format(region))
 def pick_pokemon():
     pokeball = input()
     pokeball=int(pokeball)
-    all_pokemon=[2] * 30 + [1] * 60 + [3] * 10
-    pokemon = random.choice(all_pokemon)
+    something_pokemon=["Pikachu"] * 30 + ["Magikarp"] * 60 + ["Lugia"] * 10
+    galar_pokemon=["Pikachu"] * 30 + ["Magikarp"] * 60 + ["Lugia"] * 10
+    pokemon = random.choice(galar_pokemon)
     print(' You got...')
     time.sleep(2)
     if pokeball != 1 and pokeball != 2 and pokeball != 3:
