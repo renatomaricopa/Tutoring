@@ -1,4 +1,7 @@
+from datetime import datetime
 import time
-obj = time.localtime()
-for i in obj:
-    print(i)
+x = datetime.now()
+time.sleep(1)
+y = datetime.now()
+
+print(x, y)

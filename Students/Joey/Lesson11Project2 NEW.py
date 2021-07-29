@@ -16,6 +16,7 @@ from threading import Thread
 from breezypythongui import EasyFrame
 from tkinter import *
 import time
+from datetime import datetime
 import logging
 #Format the basic configuration of the log file.
 logging.basicConfig(filename = 'restaurantLog.log', encoding = 'utf-8', level = logging.DEBUG, format='%(levelname)s: %(asctime)s: %(message)s')
@@ -61,13 +62,13 @@ class Customer(object):
         self.vehicle = vehicle
         self.checkInTime = 0
     def setTime(self):
-        obj = time.localtime()
-        self.checkInTime = time.asctime(obj)
+        obj = datetime.now()
+        self.checkInTime = obj
         return self.checkInTime
     def returnCustomerCheckIn(self):
         return(self.customerName + ", " + self.vehicle)
     def returnParkingLotCheckIn(self):
-        return(self.customerName + ", " + self.vehicle + ", " + self.setTime())
+        return(self.customerName + ", " + self.vehicle + ", " + str(self.setTime()))
     
     #strftime("%a, %d %b %Y, %H:%M:%S")
 
@@ -231,10 +232,11 @@ class RestaurantModule(EasyFrame):
             #Define a remove function, which the Remove button will use to remove items from the listbox.
             def remove(self):
                 index = self.listBox.getSelectedIndex()
-                self.listBox.delete(index)
-                itemRemoved = menu.pop(index)
-                newThread = MyThread(1, "Menu Item Removed by Manager: " + itemRemoved.returnManagerInfo())
-                newThread.start()
+                if index != -1:
+                    self.listBox.delete(index)
+                    itemRemoved = menu.pop(index)
+                    newThread = MyThread(1, "Menu Item Removed by Manager: " + itemRemoved.returnManagerInfo())
+                    newThread.start()
                 #Again, use a series of if-else statements to define the actions of the function.
                 if self.listBox.size() > 0:
                     if index > 0:
@@ -340,8 +342,9 @@ class RestaurantModule(EasyFrame):
             #Define the remove function that the customer will use with the remove button to remove items from their order listbox.
             def remove(self):
                 index = self.Cart.getSelectedIndex()
-                self.Cart.delete(index)
-                self.order.removeItems(index)
+                if index != -1:
+                    self.Cart.delete(index)
+                    self.order.removeItems(index)
                 if self.Cart.size() > 0:
                     if index > 0:
                         index -= 1
@@ -466,28 +469,27 @@ class RestaurantModule(EasyFrame):
                                command = self.returnToMenu)
                 #self.tip = 0
                 self.CustomerItemSelected(0)
+                self.ParkingLot.setSelectedIndex(0)
                 
             #Define the add function that the add button will use so that the customer can add as many items as they like to their order listbox.
             def addToLot(self):
                 customerIndex = self.CustomerBox.getSelectedIndex()
                 selectedItem = self.customerList[customerIndex]
-                #self.parkingLotList.addselectedItem(selectedItem)
-                self.ParkingLot.insert(END, selectedItem.returnParkingLotCheckIn())
-                self.parkingLotList.append(selectedItem.returnParkingLotCheckIn())
-                print(self.parkingLotList)
+                if selectedItem not in self.parkingLotList:
+                    #self.parkingLotList.addselectedItem(selectedItem)
+                    self.ParkingLot.insert(END, selectedItem.returnParkingLotCheckIn())
+                    self.parkingLotList.append(selectedItem)
+                    print(self.parkingLotList)
+                    print(self.ParkingLot.getSelectedIndex())
 
             #Define the remove function that the customer will use with the remove button to remove items from their order listbox.
             def remove(self):
-                index = self.ParkingLot.getSelectedIndex()
-                self.ParkingLot.delete(index)
-                self.parkingLotList.removeItems(index)
-                if self.ParkingLot.size() > 0:
-                    if index > 0:
-                        index -= 1
-                    self.ParkingLot.setSelectedIndex(index)
-                    self.ParkingLotItemSelected(index)
-                else:
-                    self.ParkingLotItemSelected(-1)
+                index = self.CustomerBox.getSelectedIndex()
+                if index != -1:
+                    self.CustomerBox.delete(index)
+                    self.customerList.pop(index)
+                    print(self.customerList)
+                
 
             def add(self):
                 customer = self.CustomerField.getText()
@@ -495,66 +497,59 @@ class RestaurantModule(EasyFrame):
                 customer = Customer(temp[0], temp[1])
                 self.customerList.append(customer)  
                 print(self.customerList)
+            
                 self.CustomerBox.insert(len(self.customerList)-1, customer.returnCustomerCheckIn())
-                
-
-
-
-
-
-                
-                """item = self.inputField.getText()
-                #Use a series of if-else statements to define the actions of the function.
-                if item != "":
-                    newThread = MyThread(1, "New Menu Item Added by Manager: " + item + "\n")
-                    newThread.start()
-                    index = self.listBox.getSelectedIndex()
-                    temp = item.split(", ")
-                    itemName = temp[0]
-                    retailPrice = float(temp[1][1:])
-                    wholesalePrice = float(temp[2][1:])
-                    sales = int(temp[3])
-                    description = temp[4] + "\n"
-                    menuItem = MenuItem(itemName, retailPrice, wholesalePrice, sales, description)  
-                    if index == -1:
-                        menu.insert(0, menuItem)
-                        self.listBox.insert(0, menuItem.returnManagerInfo())
-                        self.listBox.setSelectedIndex(0)
-                        self.listItemSelected(0)
-                        self.removeButton["state"] = NORMAL
-                    else:
-                        menu.insert(index, menuItem)
-                        self.listBox.insert(index, menuItem.returnManagerInfo())
-                        self.listItemSelected(index + 1)
-                    self.inputField.setText("")"""
 
             #Define a remove function, which the Remove button will use to remove items from the listbox.
             def removeFromLot(self):
                 index = self.ParkingLot.getSelectedIndex()
+                if index != -1:
+                    self.ParkingLot.delete(index)
+                    self.parkingLotList.pop(index)
+                    print(self.parkingLotList)
+                    
+                """print(index)
                 self.ParkingLot.delete(index)
-                itemRemoved = menu.pop(index)
-                newThread = MyThread(1, "Vehicle left Parking Lot: " + itemRemoved.returnParkingLotCheckIn())
-                newThread.start()
+                self.parkingLotList.pop(index)
+                print(self.parkingLotList)"""
+
+                #newThread = MyThread(1, "Vehicle left Parking Lot: " + itemRemoved.returnParkingLotCheckIn())
+                #newThread.start()
                 #Again, use a series of if-else statements to define the actions of the function.
-                if self.ParkingLot.size() > 0:
+                
+                """if self.ParkingLot.size() > 0:
                     if index > 0:
                         index -= 1
                     self.ParkingLot.setSelectedIndex(index)
                     self.ParkingLotItemSelected(index)
                 else:
-                    self.ParkingLotItemSelected(-1)
-                    self.removeButton["state"] = DISABLED
-
+                    self.ParkingLotItemSelected(-1)"""
+                    
             def sortByLastName(self):
                 def getKey(e):
-                    return e.customerName
+                    temp2 = e.customerName.split(" ")
+                    lastName = temp2[-1]
+                    return lastName
+                print(self.parkingLotList)
                 self.parkingLotList.sort(key = getKey)
                 self.customerList.sort(key = getKey)
+                for i in range(len(self.customerList)):
+                    self.CustomerBox.delete(i)
+                    self.CustomerBox.insert(i, self.customerList[i].returnCustomerCheckIn())
+                for i in range(len(self.parkingLotList)):
+                    self.ParkingLot.delete(i)
+                    self.ParkingLot.insert(i, self.parkingLotList[i].returnCustomerCheckIn() + ", " + str(self.parkingLotList[i].checkInTime))
+                    
 
             def sortByTime(self):
                 def getKey(e):
                     return e.checkInTime
                 self.parkingLotList.sort(key = getKey)
+                for obj in self.parkingLotList:
+                    print(obj.checkInTime)
+                for i in range(len(self.parkingLotList)):
+                    self.ParkingLot.delete(i)
+                    self.ParkingLot.insert(i, self.parkingLotList[i].returnCustomerCheckIn() + ", " + str(self.parkingLotList[i].checkInTime))
             
             #Define the search menu function that will search the menu for anything with a partial match to what the user enters.
             def searchMenu(self):
@@ -584,7 +579,9 @@ class RestaurantModule(EasyFrame):
 
             #Define the list item selected function so the program recognizes the item selected in the order list box.         
             def ParkingLotItemSelected(self, index):
-                self.ParkingLot.getSelectedItem()
+                pass
+                #self.ParkingLot.getSelectedItem()
+                self.CustomerField.setText(self.ParkingLot.getSelectedItem())
                       
         #Instantiate and pop up the window, and create another if statement to allow only one window to be open at a time.
         if self.pressedButton == False:
@@ -607,4 +604,3 @@ def main():
 if __name__ == "__main__":
     main()
         
-
