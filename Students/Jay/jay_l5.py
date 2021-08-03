@@ -4,7 +4,7 @@ import time
 
     
 def intro():
-    region = input("Pick a pokemon region! (galar, somethingElse)")
+    region = input("Pick a pokemon region!")
     print("You are in {} region where you are about to get your first pokemon. There are 3 choices. \nOne is very strong, another is very terrible, and the other is super cute. chooese wisely.(1 or 2 or 3)".format(region))
 def pick_pokemon():
     pokeball = input()
