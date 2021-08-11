@@ -1,0 +1,1 @@
+displayBoard(missedLetters, correctLetters, secretWord)
