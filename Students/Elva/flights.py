@@ -62,7 +62,7 @@ def ticketInput():
 # filtering first class list in order of priority
 
 def FilterFirstClass(bookingList, FCresult, FCavailableSeat):
-    for x in bookingList:
+    for x in list(bookingList): # this creates a copy that we can freely iterate/loop through.
         if FCavailableSeat == 0:
             return
         else:
@@ -72,7 +72,8 @@ def FilterFirstClass(bookingList, FCresult, FCavailableSeat):
                 FCresult.append(x)
                 bookingList.remove(x)
                 FCavailableSeat -= 1
-    for x in bookingList:
+
+    for x in list(bookingList):
         if FCavailableSeat == 0:
             return
         else:
@@ -81,7 +82,8 @@ def FilterFirstClass(bookingList, FCresult, FCavailableSeat):
                 FCresult.append(x)
                 bookingList.remove(x)
                 FCavailableSeat -= 1
-    for x in bookingList:
+
+    for x in list(bookingList):
         if FCavailableSeat == 0:
             return
         else:
@@ -90,7 +92,8 @@ def FilterFirstClass(bookingList, FCresult, FCavailableSeat):
                 FCresult.append(x)
                 bookingList.remove(x)
                 FCavailableSeat -= 1
-    for x in bookingList:
+
+    for x in list(bookingList):
         if FCavailableSeat == 0:
             return
         else:
@@ -99,7 +102,9 @@ def FilterFirstClass(bookingList, FCresult, FCavailableSeat):
                 FCresult.append(x)
                 bookingList.remove(x)
                 FCavailableSeat -= 1
-    for x in bookingList:
+
+    for x in list(bookingList): # iterator is like a loop (e.g. a for loop). iterable is what the loop loops through (e.g. a list or a string).
+        print(FCavailableSeat) # an iterator iterates/loops through an iterable.
         if FCavailableSeat == 0:
             return
         else:
@@ -108,6 +113,7 @@ def FilterFirstClass(bookingList, FCresult, FCavailableSeat):
                 FCresult.append(x)
                 bookingList.remove(x)
                 FCavailableSeat -= 1
+    
 
 #Defning functions to filter Business Class in order of priority
 def FilterBusinessClass(bookingList, BCresult, BCavailableSeat):
@@ -126,7 +132,8 @@ def FilterBusinessClass(bookingList, BCresult, BCavailableSeat):
                 i += 1
                 bookingList.remove(x)
                 BCavailableSeat -= 1
-    for x in bookingList:
+            
+    for x in list(bookingList):
         if BCavailableSeat == 0:
             return
         else:
@@ -139,7 +146,8 @@ def FilterBusinessClass(bookingList, BCresult, BCavailableSeat):
                 i += 1
                 bookingList.remove(x)
                 BCavailableSeat -= 1
-    for x in bookingList:
+
+    for x in list(bookingList):
         if BCavailableSeat == 0:
             return
         else:
@@ -152,7 +160,8 @@ def FilterBusinessClass(bookingList, BCresult, BCavailableSeat):
                 i += 1
                 bookingList.remove(x)
                 BCavailableSeat -= 1
-    for x in bookingList:
+
+    for x in list(bookingList):
         if BCavailableSeat == 0:
             return
         else:
@@ -165,7 +174,8 @@ def FilterBusinessClass(bookingList, BCresult, BCavailableSeat):
                 i += 1
                 bookingList.remove(x)
                 BCavailableSeat -= 1
-    for x in bookingList:
+
+    for x in list(bookingList):
         if BCavailableSeat == 0:
             return
         else:
@@ -181,7 +191,7 @@ def FilterBusinessClass(bookingList, BCresult, BCavailableSeat):
 
 # filtering economy class list in order of priority
 def FilterEconomyClass(bookingList, ECresult, ECavailableSeat):
-    for x in bookingList:
+    for x in list(bookingList):
         if ECavailableSeat == 0:
             return
         else:
@@ -191,7 +201,8 @@ def FilterEconomyClass(bookingList, ECresult, ECavailableSeat):
                 ECresult.append(x)
                 bookingList.remove(x)
                 ECavailableSeat -= 1
-    for x in bookingList:
+
+    for x in list(bookingList):
         if ECavailableSeat == 0:
             return
         else:
@@ -201,7 +212,8 @@ def FilterEconomyClass(bookingList, ECresult, ECavailableSeat):
                 ECresult.append(x)
                 bookingList.remove(x)
                 ECavailableSeat -= 1
-    for x in bookingList:
+
+    for x in list(bookingList):
         if ECavailableSeat == 0:
             return
         else:
@@ -211,7 +223,8 @@ def FilterEconomyClass(bookingList, ECresult, ECavailableSeat):
                 ECresult.append(x)
                 bookingList.remove(x)
                 ECavailableSeat -= 1
-    for x in bookingList:
+
+    for x in list(bookingList):
         if ECavailableSeat == 0:
             return
         else:
@@ -221,7 +234,8 @@ def FilterEconomyClass(bookingList, ECresult, ECavailableSeat):
                 ECresult.append(x)
                 bookingList.remove(x)
                 ECavailableSeat -= 1
-    for x in bookingList:
+                
+    for x in list(bookingList):
         if ECavailableSeat == 0:
             return
         else:
@@ -257,7 +271,7 @@ def printTable(resultList, bookingClass, average, total):
     print(f'|{"Surname":^15}|{"FirstName":^15}|{"Price":^15}|{"Status":^15}|')
     print('-'*65)
     for x in resultList:
-        print(f'|{x[1]:^15}|{x[2]:^15}|{x[6]:^15}|{x[9]:^15}|') #1.) format of the columns; 2.) selection of the columns
+        print(f'|{x[1]:^15}|{x[2]:^15}|{x[6]:>15.2f}|{x[9]:^15}|') #1.) format of the columns; 2.) selection of the columns
     print('-'*65, end="\n"*2)
     print(f"{bookingClass} Average Booking Price: {average:.2f}")  #integer to string
     print(f"{bookingClass} Total Booking Revenue: {total:.2f}")
