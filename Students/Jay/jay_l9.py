@@ -70,7 +70,7 @@ def displayBoard(missedLetters, correctLetters, secretWord):
     print()
 
 def getGuess(alreadyGuessed):
-    while True:
+    while True: 
         guess = input("Enter a letter: ")
         if len(guess) == 1 and guess.isalpha() and guess not in alreadyGuessed:
             return guess
@@ -91,13 +91,14 @@ while True:
     displayBoard(missedLetters, correctLetters, secretWord)
     guess = getGuess(missedLetters + correctLetters)
     if guess in secretWord:
-        correctLetters = correctLetters + guess    
+        correctLetters += guess    
         foundAllLetters = True
         for i in range(len(secretWord)):
             if secretWord[i] not in correctLetters:
                 foundAllLetters = False
                 break
         if foundAllLetters:
+            displayBoard(missedLetters, correctLetters, secretWord)
             print('Yes! The secret word is "' + secretWord + '"! You have won!')
             gameIsDone = True
     else:
