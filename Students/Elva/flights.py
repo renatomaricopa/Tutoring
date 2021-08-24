@@ -271,10 +271,10 @@ def printTable(resultList, bookingClass, average, total):
     print(f'|{"Surname":^15}|{"FirstName":^15}|{"Price":^15}|{"Status":^15}|')
     print('-'*65)
     for x in resultList:
-        print(f'|{x[1]:^15}|{x[2]:^15}|{x[6]:>15.2f}|{x[9]:^15}|') #1.) format of the columns; 2.) selection of the columns
+        print(f'|{x[1]:^15}|{x[2]:^15}|{x[6]:>15,.2f}|{x[9]:^15}|') #1.) format of the columns; 2.) selection of the columns
     print('-'*65, end="\n"*2)
-    print(f"{bookingClass} Average Booking Price: {average:.2f}")  #integer to string
-    print(f"{bookingClass} Total Booking Revenue: {total:.2f}")
+    print(f"{bookingClass} Average Booking Price: {average:,.2f}")  #integer to string
+    print(f"{bookingClass} Total Booking Revenue: {total:,.2f}")
     print(f"{bookingClass} Total Passengers: {len(resultList)}", end="\n"*2)
     print('='*65, end="\n"*2)
 
