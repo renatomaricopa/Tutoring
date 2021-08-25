@@ -87,7 +87,7 @@ missedLetters = ""
 correctLetters = ""
 secretWord = getRandomWord(words)
 gameIsDone = False
-while True:
+while missedLetters:
     displayBoard(missedLetters, correctLetters, secretWord)
     guess = getGuess(missedLetters + correctLetters)
     if guess in secretWord:
@@ -103,6 +103,9 @@ while True:
             gameIsDone = True
     else:
         missedLetters = missedLetters + guess
+        if len(missedLetters) == 6:
+            print("Sorry you lost!")
+            gameIsDone = True
     if gameIsDone:
         if playAgain():
             missedLetters = ''
