@@ -70,8 +70,8 @@ def FilterFirstClass(bookingList, FCresult, FCavailableSeat):
             if x[5] == 'F' and x[8] == 1 and x[3] == 'F' and x[4] < 2003:
                 x[9] = "F1"
                 FCresult.append(x)
-                bookingList.remove(x)
                 FCavailableSeat -= 1
+    # bookingList = list(filter(lambda x: x not in FCresult, bookingList)
 
     for x in list(bookingList):
         if FCavailableSeat == 0:
