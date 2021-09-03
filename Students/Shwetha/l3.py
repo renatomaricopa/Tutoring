@@ -55,3 +55,4 @@ for number in l1:
     if number == 3:
         threes += 1
 print(ones, twos, threes)
+
