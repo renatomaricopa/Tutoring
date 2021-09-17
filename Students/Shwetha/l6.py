@@ -56,7 +56,10 @@ for key, value in word_dictionary.items():
 # Assignment 1
 # Create a dictionary called "user_info" and add 3 key value pairs to it (up to you what you want to add)
 # e.g. Key = "shirt_color", Value = "green" or Key = "age", Value = 30
-
+user_info = {}
+user_info["shirt_color"] = "green"
+user_info["age"] = 30
+print(user_info)
 # Assignment 2
 # Extract the first name and the last name from "artist" dictionary
 # Create a string that looks like this: "Neil Young"
