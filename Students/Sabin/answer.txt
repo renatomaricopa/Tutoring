@@ -1,9 +1,4 @@
-for this example the command file will be empty
-that means you just need to sort this file alphabetically
-don't add any empty lines
-test lines
-duplicate line there should only be one of this in the output
-extra sentenceanother sentence
+another sentence
 for this example the command file will be empty
 that means you just need to sort this file alphabetically
 don't add any empty lines

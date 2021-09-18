@@ -218,19 +218,6 @@ int main (int argc, char* argv[]) {
             cl1->addEnd(line);
         }
     }
-
-    // print node contents
-    Node<string>* curr = cl1-> head; 
-    for (size_t i = 0; i < cl1->_size; i++) {
-        cout <<  curr->currentElem <<endl; 
-        if (i == cl1->_size - 1) {
-            out << curr->currentElem;
-        }
-        else {
-        out << curr->currentElem + "\n";
-        } 
-        curr = curr->next;
-    }
     
     // Going through command.txt
     while (!com.eof()) {
@@ -271,10 +258,8 @@ int main (int argc, char* argv[]) {
             int end = token.length() - 2;
             sortType = token.substr(1, end);
         }
-        cout << index << sentence << sortType << endl;
     }
-
-    curr = cl1->head; 
+    Node<string>* curr = cl1-> head; 
     cout << "FINAL NODE LIST" << endl; 
     for (size_t i = 0; i < cl1->_size; i++) {
         cout <<  curr->currentElem <<endl; 
