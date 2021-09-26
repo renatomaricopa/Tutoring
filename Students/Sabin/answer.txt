@@ -1,8 +1,5 @@
 another sentence
-for this example the command file will be empty
-that means you just need to sort this file alphabetically
-don't add any empty lines
-test lines
-duplicate line there should only be one of this in the output
-extra sentence
+last sentence of the input
+longer sentence than another sentence
+most of the sentences have the word sentence in them
 this sentence should be added to the end of the list

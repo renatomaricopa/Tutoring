@@ -131,12 +131,6 @@ void LinkedList<T>::add(int idx, T line) {
             }
         }
     }
-    // Node<T> *curr = head; 
-    // cout << "FINAL NODE LIST" << endl; 
-    // for (size_t i = 0; i < _size; i++) {
-    //     cout <<  curr->currentElem <<endl; 
-    //     curr = curr->next;
-    // }    
 }
 
 //  template<typename T> 
@@ -176,12 +170,16 @@ template<typename T>
  void LinkedList<T>::sortAlpha() {
      Node<T> *i = head; 
      Node<T> *j; 
+     const char * str1;
+    const char * str2;
      if(!i) 
      return; 
      while (i) {
          j = i->next; 
          while(j) {
-             if(i->currentElem[0] > j->currentElem[0]) {
+            str1 = i->currentElem.c_str();
+            str2 = j->currentElem.c_str();
+             if(strcmp(str1, str2) < 0) {
                  swap(i->currentElem,j->currentElem);
              }
              j = j->next; 
@@ -199,7 +197,7 @@ int main (int argc, char* argv[]) {
     // string command = am.get("command");
 
     ifstream in ("input21.txt");
-    ifstream com ("command22.txt");
+    ifstream com ("command21.txt");
     ofstream out ("answer.txt"); 
     LinkedList<string> *cl1 = new LinkedList<string>();
 
