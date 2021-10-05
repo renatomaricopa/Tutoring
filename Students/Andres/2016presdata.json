@@ -1,0 +1,502 @@
+[
+  {
+    "State": "Alabama",
+    "votesDem": 729547,
+    "percD": "34.36",
+    "votesRep": 1318255,
+    "percR": "62.08",
+    "electoralDem": 0,
+    "electoralRep": 9,
+    "Pop": 4908620
+  },
+  {
+    "State": "Alaska",
+    "votesDem": 116454,
+    "percD": "36.55",
+    "votesRep": 163387,
+    "percR": "51.28",
+    "electoralDem": 0,
+    "electoralRep": 3,
+    "Pop": 734002
+  },
+  {
+    "State": "Arizona",
+    "votesDem": 1161167,
+    "percD": "45.13",
+    "votesRep": 1252401,
+    "percR": "48.67",
+    "electoralDem": 0,
+    "electoralRep": 11,
+    "Pop": 7378490
+  },
+  {
+    "State": "Arkansas",
+    "votesDem": 380494,
+    "percD": "33.65",
+    "votesRep": 684872,
+    "percR": "60.57",
+    "electoralDem": 0,
+    "electoralRep": 6,
+    "Pop": 3039000
+  },
+  {
+    "State": "California",
+    "votesDem": 8753788,
+    "percD": "61.73",
+    "votesRep": 4483810,
+    "percR": "31.62",
+    "electoralDem": 55,
+    "electoralRep": 0,
+    "Pop": 39937500
+  },
+  {
+    "State": "Colorado",
+    "votesDem": 1338870,
+    "percD": "48.16",
+    "votesRep": 1202484,
+    "percR": "43.25",
+    "electoralDem": 9,
+    "electoralRep": 0,
+    "Pop": 5845530
+  },
+  {
+    "State": "Connecticut",
+    "votesDem": 897572,
+    "percD": "54.57",
+    "votesRep": 673215,
+    "percR": "40.93",
+    "electoralDem": 7,
+    "electoralRep": 0,
+    "Pop": 3563080
+  },
+  {
+    "State": "Delaware",
+    "votesDem": 235603,
+    "percD": "53.09",
+    "votesRep": 185127,
+    "percR": "41.72",
+    "electoralDem": 3,
+    "electoralRep": 0,
+    "Pop": 982895
+  },
+  {
+    "State": "Florida",
+    "votesDem": 4504975,
+    "percD": "47.82",
+    "votesRep": 4617886,
+    "percR": "49.02",
+    "electoralDem": 0,
+    "electoralRep": 29,
+    "Pop": 21993000
+  },
+  {
+    "State": "Georgia",
+    "votesDem": 1877963,
+    "percD": "45.64",
+    "votesRep": 2089104,
+    "percR": "50.77",
+    "electoralDem": 0,
+    "electoralRep": 16,
+    "Pop": 10736100
+  },
+  {
+    "State": "Hawaii",
+    "votesDem": 266891,
+    "percD": "62.22",
+    "votesRep": 128847,
+    "percR": "30.03",
+    "electoralDem": 3,
+    "electoralRep": 0,
+    "Pop": 1412690
+  },
+  {
+    "State": "Idaho",
+    "votesDem": 189765,
+    "percD": "27.49",
+    "votesRep": 409055,
+    "percR": "59.26",
+    "electoralDem": 0,
+    "electoralRep": 4,
+    "Pop": 1826160
+  },
+  {
+    "State": "Illinois",
+    "votesDem": 3090729,
+    "percD": "55.83",
+    "votesRep": 2146015,
+    "percR": "38.76",
+    "electoralDem": 20,
+    "electoralRep": 0,
+    "Pop": 12659700
+  },
+  {
+    "State": "Indiana",
+    "votesDem": 1033126,
+    "percD": "37.91",
+    "votesRep": 1557286,
+    "percR": "56.82",
+    "electoralDem": 0,
+    "electoralRep": 11,
+    "Pop": 6745350
+  },
+  {
+    "State": "Iowa",
+    "votesDem": 653669,
+    "percD": "41.74",
+    "votesRep": 800983,
+    "percR": "51.15",
+    "electoralDem": 0,
+    "electoralRep": 6,
+    "Pop": 3179850
+  },
+  {
+    "State": "Kansas",
+    "votesDem": 427005,
+    "percD": "36.05",
+    "votesRep": 671018,
+    "percR": "56.65",
+    "electoralDem": 0,
+    "electoralRep": 6,
+    "Pop": 2910360
+  },
+  {
+    "State": "Kentucky",
+    "votesDem": 628854,
+    "percD": "32.68",
+    "votesRep": 1202971,
+    "percR": "62.52",
+    "electoralDem": 0,
+    "electoralRep": 8,
+    "Pop": 4499690
+  },
+  {
+    "State": "Louisiana",
+    "votesDem": 780154,
+    "percD": "38.45",
+    "votesRep": 1178638,
+    "percR": "58.09",
+    "electoralDem": 0,
+    "electoralRep": 8,
+    "Pop": 4645180
+  },
+  {
+    "State": "Maine",
+    "votesDem": 357735,
+    "percD": "47.83",
+    "votesRep": 335593,
+    "percR": "44.87",
+    "electoralDem": 2,
+    "electoralRep": 0,
+    "Pop": 1345790
+  },
+  {
+    "State": "Maryland",
+    "votesDem": 1677928,
+    "percD": "60.33",
+    "votesRep": 943169,
+    "percR": "33.91",
+    "electoralDem": 10,
+    "electoralRep": 0,
+    "Pop": 6083120
+  },
+  {
+    "State": "Massachusetts",
+    "votesDem": 1995196,
+    "percD": "60.01",
+    "votesRep": 1090893,
+    "percR": "32.81",
+    "electoralDem": 11,
+    "electoralRep": 0,
+    "Pop": 6976600
+  },
+  {
+    "State": "Michigan",
+    "votesDem": 2268839,
+    "percD": "47.27",
+    "votesRep": 2279543,
+    "percR": "47.50",
+    "electoralDem": 0,
+    "electoralRep": 16,
+    "Pop": 10045000
+  },
+  {
+    "State": "Minnesota",
+    "votesDem": 1367716,
+    "percD": "46.44",
+    "votesRep": 1322951,
+    "percR": "44.92",
+    "electoralDem": 10,
+    "electoralRep": 0,
+    "Pop": 5700670
+  },
+  {
+    "State": "Mississippi",
+    "votesDem": 485131,
+    "percD": "40.11",
+    "votesRep": 700714,
+    "percR": "57.94",
+    "electoralDem": 0,
+    "electoralRep": 6,
+    "Pop": 2989260
+  },
+  {
+    "State": "Missouri",
+    "votesDem": 1071068,
+    "percD": "38.14",
+    "votesRep": 1594511,
+    "percR": "56.77",
+    "electoralDem": 0,
+    "electoralRep": 10,
+    "Pop": 6169270
+  },
+  {
+    "State": "Montana",
+    "votesDem": 177709,
+    "percD": "35.75",
+    "votesRep": 279240,
+    "percR": "56.17",
+    "electoralDem": 0,
+    "electoralRep": 3,
+    "Pop": 1086760
+  },
+  {
+    "State": "Nebraska",
+    "votesDem": 284494,
+    "percD": "33.70",
+    "votesRep": 495961,
+    "percR": "58.75",
+    "electoralDem": 0,
+    "electoralRep": 2,
+    "Pop": 1952570
+  },
+  {
+    "State": "Nevada",
+    "votesDem": 539260,
+    "percD": "47.92",
+    "votesRep": 512058,
+    "percR": "45.50",
+    "electoralDem": 6,
+    "electoralRep": 0,
+    "Pop": 3139660
+  },
+  {
+    "State": "New Hampshire",
+    "votesDem": 348526,
+    "percD": "46.98",
+    "votesRep": 345790,
+    "percR": "46.61",
+    "electoralDem": 4,
+    "electoralRep": 0,
+    "Pop": 1371250
+  },
+  {
+    "State": "New Jersey",
+    "votesDem": 2148278,
+    "percD": "54.99",
+    "votesRep": 1601933,
+    "percR": "41.00",
+    "electoralDem": 14,
+    "electoralRep": 0,
+    "Pop": 8936570
+  },
+  {
+    "State": "New Mexico",
+    "votesDem": 385234,
+    "percD": "48.26",
+    "votesRep": 319667,
+    "percR": "40.04",
+    "electoralDem": 5,
+    "electoralRep": 0,
+    "Pop": 2096640
+  },
+  {
+    "State": "New York",
+    "votesDem": 4556124,
+    "percD": "59.01",
+    "votesRep": 2819534,
+    "percR": "36.52",
+    "electoralDem": 29,
+    "electoralRep": 0,
+    "Pop": 19440500
+  },
+  {
+    "State": "North Carolina",
+    "votesDem": 2189316,
+    "percD": "46.17",
+    "votesRep": 2362631,
+    "percR": "49.83",
+    "electoralDem": 0,
+    "electoralRep": 15,
+    "Pop": 10611900
+  },
+  {
+    "State": "North Dakota",
+    "votesDem": 93758,
+    "percD": "27.23",
+    "votesRep": 216794,
+    "percR": "62.96",
+    "electoralDem": 0,
+    "electoralRep": 3,
+    "Pop": 761723
+  },
+  {
+    "State": "Ohio",
+    "votesDem": 2394164,
+    "percD": "43.56",
+    "votesRep": 2841005,
+    "percR": "51.69",
+    "electoralDem": 0,
+    "electoralRep": 18,
+    "Pop": 11747700
+  },
+  {
+    "State": "Oklahoma",
+    "votesDem": 420375,
+    "percD": "28.93",
+    "votesRep": 949136,
+    "percR": "65.32",
+    "electoralDem": 0,
+    "electoralRep": 7,
+    "Pop": 3954820
+  },
+  {
+    "State": "Oregon",
+    "votesDem": 1002106,
+    "percD": "50.07",
+    "votesRep": 782403,
+    "percR": "39.09",
+    "electoralDem": 7,
+    "electoralRep": 0,
+    "Pop": 4301090
+  },
+  {
+    "State": "Pennsylvania",
+    "votesDem": 2926441,
+    "percD": "47.46",
+    "votesRep": 2970733,
+    "percR": "48.18",
+    "electoralDem": 0,
+    "electoralRep": 20,
+    "Pop": 12820900
+  },
+  {
+    "State": "Rhode Island",
+    "votesDem": 252525,
+    "percD": "54.41",
+    "votesRep": 180543,
+    "percR": "38.90",
+    "electoralDem": 4,
+    "electoralRep": 0,
+    "Pop": 1056160
+  },
+  {
+    "State": "South Carolina",
+    "votesDem": 855373,
+    "percD": "40.67",
+    "votesRep": 1155389,
+    "percR": "54.94",
+    "electoralDem": 0,
+    "electoralRep": 9,
+    "Pop": 5210100
+  },
+  {
+    "State": "South Dakota",
+    "votesDem": 117458,
+    "percD": "31.74",
+    "votesRep": 227721,
+    "percR": "61.53",
+    "electoralDem": 0,
+    "electoralRep": 3,
+    "Pop": 903027
+  },
+  {
+    "State": "Tennessee",
+    "votesDem": 870695,
+    "percD": "34.72",
+    "votesRep": 1522925,
+    "percR": "60.72",
+    "electoralDem": 0,
+    "electoralRep": 11,
+    "Pop": 6897580
+  },
+  {
+    "State": "Texas",
+    "votesDem": 3877868,
+    "percD": "43.24",
+    "votesRep": 4685047,
+    "percR": "52.23",
+    "electoralDem": 0,
+    "electoralRep": 36,
+    "Pop": 29472300
+  },
+  {
+    "State": "Utah",
+    "votesDem": 310676,
+    "percD": "27.46",
+    "votesRep": 515231,
+    "percR": "45.54",
+    "electoralDem": 0,
+    "electoralRep": 6,
+    "Pop": 3282120
+  },
+  {
+    "State": "Vermont",
+    "votesDem": 178573,
+    "percD": "56.68",
+    "votesRep": 95369,
+    "percR": "30.27",
+    "electoralDem": 3,
+    "electoralRep": 0,
+    "Pop": 628061
+  },
+  {
+    "State": "Virginia",
+    "votesDem": 1981473,
+    "percD": "49.73",
+    "votesRep": 1769443,
+    "percR": "44.41",
+    "electoralDem": 13,
+    "electoralRep": 0,
+    "Pop": 8626210
+  },
+  {
+    "State": "Washington",
+    "votesDem": 1742718,
+    "percD": "52.54",
+    "votesRep": 1221747,
+    "percR": "36.83",
+    "electoralDem": 8,
+    "electoralRep": 0,
+    "Pop": 7797100
+  },
+  {
+    "State": "West Virginia",
+    "votesDem": 188794,
+    "percD": "26.43",
+    "votesRep": 489371,
+    "percR": "68.50",
+    "electoralDem": 0,
+    "electoralRep": 5,
+    "Pop": 1778070
+  },
+  {
+    "State": "Wisconsin",
+    "votesDem": 1382536,
+    "percD": "46.45",
+    "votesRep": 1405284,
+    "percR": "47.22",
+    "electoralDem": 0,
+    "electoralRep": 10,
+    "Pop": 5851750
+  },
+  {
+    "State": "Wyoming",
+    "votesDem": 55973,
+    "percD": "21.63",
+    "votesRep": 174419,
+    "percR": "67.40",
+    "electoralDem": 0,
+    "electoralRep": 3,
+    "Pop": 567025
+  }
+]
