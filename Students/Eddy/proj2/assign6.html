@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      const generateTable = () => {
+        // put images in array (list)
+        const imgArray = [];
+        for (let i = 0; i < 10; i++) {
+          imgArray.push(`img${i}.svg`);
+        }
+        // prompt user for number of rows and columns
+        // Note: const is used for constant variables (never changes), let/var is used for dynamic variables (can be modified)
+        const rows = prompt("Enter the number of rows:");
+        const cols = prompt("Enter the number of columns");
+        const numpics = imgArray.length;
+        let picnum;
+        // Start creating table
+        document.writeln(
+          "<table style='margin:auto' cellspacing='2' cellpadding='2' border='1'>"
+        );
+        for (let row = 0; row < rows; row++) {
+          document.writeln("<tr>");
+          for (let col = 0; col < cols; col++) {
+            picnum = Math.floor(Math.random() * numpics);
+            document.writeln(
+              `<th><img src="${imgArray[picnum]}" style="width:150px"></th>`
+            );
+          }
+          document.writeln("</tr>");
+        }
+        document.writeln("</Table>");
+      };
+    </script>
+  </head>
+  <body onload="generateTable()"></body>
+</html>
