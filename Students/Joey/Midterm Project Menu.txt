@@ -1,9 +1,9 @@
-Calamari, $20.00, $8.00, 630, Fried Calamari with Tomato Coulis
+Calamari, $20.00, $8.00, 631, Fried Calamari with Tomato Coulis
 Crab Cakes, $15.00, $7.00, 411, Small Cakes of Crab with Herbed Remoulade Sauce
 Shrimp Cocktail, $18.00, $7.00, 555, Chilled Shrimp with Cocktail Sauce
 Maine Lobster Bisque, $20.00, $9.00, 510, Butter-poached Lobster with Coral and Chervil
 Clam Chowder, $18.00, $8.00, 539, Classic New England Clam Chowder
-Caesar Salad, $15.00, $5.00, 555, Crisp Romaine Leaves with Caesar Dressing and Fried Capers
+Caesar Salad, $15.00, $5.00, 556, Crisp Romaine Leaves with Caesar Dressing and Fried Capers
 Grilled Swordfish, $48.00, $20.00, 162, Fresh Swordfish with Toy Box Tomatoes and Marble Potatoes
 Pan-seared Scallops, $49.00, $22.00, 135, Fresh Scallops with Gnocchi and Peas
 Blackened Salmon, $41.00, $17.00, 116, Fresh Salmon with Creamy Corn Puree
@@ -14,7 +14,7 @@ Maine Lobster Tails, $65.00, $25.00, 84, Fresh Maine Lobster Tails with Buttery 
 Grilled Asparagus, $13.00, $4.00, 193, Grilled Asparagus with Meyer Lemon-Herb Butter
 Brussels Sprouts, $11.00, $3.00, 187, Brussels Sprouts with Bacon and Malt Gastrique
 Mashed Potatoes, $10.00, $2.50, 319, Fully Loaded Mashed Potatoes
-New York Cheesecake, $20.00, $8.00, 319, Classic Cheesecake with Lambert Cherry Sauce
+New York Cheesecake, $20.00, $8.00, 320, Classic Cheesecake with Lambert Cherry Sauce
 Banana Cream Tart, $15.00, $6.50, 272, Banana Cream Tart with Salted Caramel and Whipped Cream
 Carrot Cake, $15.00, $6.50, 288, Classic Souther Carrot Cake with Pineapple Popping Boba
 Mango Sorbet, $12.00, $5.00, 252, Fresh Sorbet with Melon and Pineapple

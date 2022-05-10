@@ -4,3 +4,21 @@ DEBUG: 2021-07-28 18:02:58,421: New Order Created
 
 DEBUG: 2021-07-28 18:07:05,358: New Order Created
 
+DEBUG: 2022-05-10 14:05:08,915: New Order Created
+
+DEBUG: 2022-05-10 14:05:13,011: This Item was added to the customer order: Calamari, $20.00, $8.00, 630, Fried Calamari with Tomato Coulis
+
+DEBUG: 2022-05-10 14:05:19,534: This Item was added to the customer order: Caesar Salad, $15.00, $5.00, 555, Crisp Romaine Leaves with Caesar Dressing and Fried Capers
+
+DEBUG: 2022-05-10 14:05:22,596: This Item was added to the customer order: New York Cheesecake, $20.00, $8.00, 319, Classic Cheesecake with Lambert Cherry Sauce
+
+DEBUG: 2022-05-10 14:05:27,955: This is the subtotal of the order: $55.00
+
+DEBUG: 2022-05-10 14:05:27,971: Customer Placed the Order.
+
+DEBUG: 2022-05-10 14:05:27,975: Tax Amount Added: $3.08
+
+DEBUG: 2022-05-10 14:05:27,979: Tip Amount Added: $0.00
+
+DEBUG: 2022-05-10 14:05:27,984: Grand Total of the Order: $58.08
+
